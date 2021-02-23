@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+/* Top bar section */
+
+.top_bar {
+  background-color: rgba(0, 60, 255, 0.705);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  /* position: relative; */
+  z-index: 7;
+  position: fixed;
+  width: 100%;
+}
+/* Logo text styling */
+.logo {
+  margin-left: 5vw;
+}
+.logo a {
+  color: white;
+  font-size: 150%;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.logo a em {
+  font-style: normal;
+  color: orange;
+}
+/* Navigation section */
+.navigation {
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  background-color: rgba(155, 7, 192, 0.952);
+  width: 100%;
+  height: 40vh;
+  transform: translateY(-50vh);
+  transition: 0.6s;
+  z-index: 2;
+}
+.bring_nav {
+  transform: translateY(0);
+}
+.navigation ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.navigation li {
+  list-style-type: none;
+}
+.navigation li a {
+  color: white;
+  font-family: sans-serif;
+  padding: 3px;
+  border-bottom: 2px solid orange;
+}
+
+/* menu bar */
+.menu_bar_box {
+  margin-right: 5vw;
+}
+.bar {
+  width: 25px;
+  border-radius: 10px;
+  height: 3px;
+  margin: 4px;
+  background-color: white;
+  transition: 0.5s;
+}
+/* cross menu bar appear */
+.change .bar1 {
+  /* -webkit-transform: rotate(-45deg) translate(-9px, 6px); */
+  transform: rotate(-45deg) translate(-5px, 3px);
+  transition: 0.5s;
+  background-color: white;
+}
+.change .bar2 {
+  opacity: 0;
+  transition: 0.5s;
+  background-color: white;
+}
+.change .bar3 {
+  /* -webkit-transform: rotate(45deg) translate(-8px, -8px); */
+  transform: rotate(45deg) translate(-7px, -6px);
+  transition: 0.5s;
+  background-color: white;
+}
+
+/* Front page banner */
+.front_banner {
+  background-image: url("Images/20210221_092941.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+}
+.banner_in1 {
+  background-color: rgba(2, 2, 7, 0.63);
+  width: 100%;
+  height: 100vh;
+}
+          /* banner description section*/
+.banner_in1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content_main_box {
+    width: 80%;
+    height: 70%;
+    
+}
+.content_main_box{
+   display: flex;
+   flex-direction:column;
+   justify-content: space-around;
+}
+.cont_inn{
+    width: 100%;
+    height: 18%;
+}
+.exp{
+  margin-bottom:13vw;
+}
+.exp h3{
+    padding-top:25px;
+    margin-bottom:5px;
+   text-align:left;
+    font-family: sans-serif;
+    font-size:4vh;
+    color: white;
+}
+.best{
+    font-family: sans-serif;
+    font-size: 70%;
+    color: white;
+}
+.best em{
+   font-style: normal;
+   color: orange;
+}
+.know_book{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.know_book a{
+   font-family: sans-serif;
+   font-size:2.7vh;
+   color: rgb(7, 0, 0);
+   padding:1vw 2vw;
+   background-color: orange;
+   border-radius: 3px;
+}
+.offer, .book{
+ width: 50vw;
+}
+
+              /*  discount offer */
+.discount{
+  padding-top: 3vh;
+   color: white;
+   font-size: 2vh;
+   font-family: sans-serif;
+}
+.discount em {
+  font-style: normal;
+  color: orange;
+  font-size:25px;
+}
+          /* About us + adress + why choose us */
+  .about{
+    width: 100%;
+    height: 105vh;
+    background-image: url("images/student.jpg");
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .about_know_black{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.692);
+    display: flex;
+    justify-content: center;
+  }
+     /*  one in */
+ .abt_main_box{
+   margin-top:10vh;
+   width: 90%;
+   height:85vh;
+   
+ }
+
+ .abt_main_box h2,p{
+  color: white;
+  margin:2vw;
+ }
+ .abt_main_box p{
+   font-size:4vw;
+   font-family:sans-serif;
+ }
+ .about h2{
+  color:rgb(243, 135, 12);
+}
+.adress_desc{
+  display: flex;
+  flex-wrap: wrap;
+}
+.adress_desc em{
+  font-style: normal;
+  color: rgb(223, 223, 223);
+}
+ .adress_desc p{
+   margin: none;
+   margin-left: 2vw;
+ }
+ /* fee structure */
+ .fee_str{
+   
+   width: 100%;
+   height: auto;
+ }
+ .fee_str table{
+   color: white;
+   border: 1px solid white;
+ }
+ .fee_str table td{
+   border: 0.5px solid white;
+ }
+ table, td{
+  border-collapse: collapse;
+  padding: 2px;
+}
+.fee_str em{
+  font-style: normal;
+  color: red;
+}
