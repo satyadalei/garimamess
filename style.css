@@ -4,14 +4,16 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
-
+body{
+  
+}
 a {
   text-decoration: none;
 }
 /* Top bar section */
 
 .top_bar {
-  background-color: rgba(0, 60, 255, 0.705);
+  background-color: rgb(1, 7, 1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -109,7 +111,7 @@ a {
   z-index: -10;
 }
 .banner_in1 {
-  background-color: rgba(2, 2, 7, 0.63);
+  background-color: rgba(2, 2, 7, 0.575);
   width: 100%;
   height: 100vh;
 }
@@ -188,11 +190,11 @@ a {
           /* About us + adress + why choose us */
   .about{
     width: 100%;
-    height: 105vh;
-    background-image: url("Images/student.jpg");
+    height: 110vh;
+    background-image: url("images/student.jpg");
     font-family: sans-serif;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     background-position: center;
   }
   .about_know_black{
@@ -235,7 +237,6 @@ a {
  }
  /* fee structure */
  .fee_str{
-   
    width: 100%;
    height: auto;
  }
