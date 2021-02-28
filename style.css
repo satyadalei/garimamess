@@ -1,0 +1,593 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  
+}
+a {
+  text-decoration: none;
+}
+/* Top bar section */
+
+.top_bar {
+  background-color: rgba(1, 7, 1, 0.637);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  /* position: relative; */
+  z-index: 7;
+  position: fixed;
+  width: 100%;
+}
+/* Logo text styling */
+.logo {
+  margin-left: 5vw;
+}
+.logo a {
+  color: white;
+  font-size: 150%;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+.logo a em {
+  font-style: normal;
+  color: orange;
+}
+/* Navigation section */
+.navigation {
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  background-color: rgba(155, 7, 192, 0.952);
+  width: 100%;
+  height: 40vh;
+  transform: translateY(-50vh);
+  transition: 0.6s;
+  z-index: 2;
+}
+.bring_nav {
+  transform: translateY(0);
+}
+.navigation ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.navigation li {
+  list-style-type: none;
+}
+.navigation li a {
+  color: white;
+  font-family: sans-serif;
+  padding: 3px;
+  border-bottom: 2px solid orange;
+}
+
+/* menu bar */
+.menu_bar_box {
+  margin-right: 5vw;
+}
+.bar {
+  width: 25px;
+  border-radius: 10px;
+  height: 3px;
+  margin: 4px;
+  background-color: white;
+  transition: 0.5s;
+}
+/* cross menu bar appear */
+.change .bar1 {
+  /* -webkit-transform: rotate(-45deg) translate(-9px, 6px); */
+  transform: rotate(-45deg) translate(-5px, 3px);
+  transition: 0.5s;
+  background-color: white;
+}
+.change .bar2 {
+  opacity: 0;
+  transition: 0.5s;
+  background-color: white;
+}
+.change .bar3 {
+  /* -webkit-transform: rotate(45deg) translate(-8px, -8px); */
+  transform: rotate(45deg) translate(-7px, -6px);
+  transition: 0.5s;
+  background-color: white;
+}
+
+/* Front page banner */
+.front_banner {
+  background-image: url("Images/20210221_092941.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+}
+.banner_in1 {
+  background-color: rgba(2, 2, 7, 0.575);
+  width: 100%;
+  height: 100vh;
+}
+            /* banner description section*/
+.banner_in1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content_main_box {
+    width: 80%;
+    height: 70%;
+    
+}
+.content_main_box{
+   display: flex;
+   flex-direction:column;
+   justify-content: space-around;
+}
+.cont_inn{
+    width: 100%;
+    height: 18%;
+}
+.exp{
+  margin-bottom:13vw;
+}
+.exp h3{
+    padding-top:25px;
+    margin-bottom:5px;
+   text-align:left;
+    font-family: sans-serif;
+    font-size:4vh;
+    color: white;
+}
+.best{
+    font-family: sans-serif;
+    font-size: 70%;
+    color: white;
+}
+.best em{
+   font-style: normal;
+   color: orange;
+}
+.know_book{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.know_book a{
+   font-family: sans-serif;
+   font-size:2.7vh;
+   color: rgb(7, 0, 0);
+   padding:1vw 2vw;
+   background-color: orange;
+   border-radius: 3px;
+}
+.offer, .book{
+ width: 50vw;
+}
+
+              /*  discount offer */
+.discount{
+   padding-top: 3vh;
+   color: white;
+   font-size: 2vh;
+   font-family: sans-serif;
+}
+.discount em {
+  font-style: normal;
+  color: orange;
+  font-size:25px;
+}
+em.disc_vlu{
+  font-size: 8vh;
+}
+             /* About us + adress + why choose us */
+  .about{
+    width: 100%;
+    min-height:800px;
+    max-height: 1500px;
+    background-image: url("images/student.jpg");
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+  }
+  .about_know_black{
+    width: 100%;
+    height:800px;
+    background-color: rgba(0, 0, 0, 0.747);
+    display: flex;
+    justify-content: center;
+  }
+                /*  one in */
+ .abt_main_box{
+   margin-top:10vh;
+   width: 90%;
+   height:85vh;
+   
+ }
+
+ .abt_main_box h2,p{
+  color: white;
+  margin:1vw;
+ }
+ .abt_main_box p{
+   font-size:4vw;
+   font-family:sans-serif;
+ }
+ .about h2{
+  color:rgb(243, 135, 12);
+  font-size: 20px;
+}
+.adress_desc{
+  display: flex;
+  flex-wrap: wrap;
+}
+.adress_desc em{
+  font-style: normal;
+  color: rgb(223, 223, 223);
+}
+ .adress_desc p{
+   margin: none;
+   margin-left: 2vw;
+ }
+ /* fee structure */
+ .fee_str{
+   width: 100%;
+   height: auto;
+ }
+ .fee_str table{
+   color: white;
+   border: 1px solid white;
+ }
+ .fee_str table td{
+   border: 0.5px solid white;
+ }
+ table, td{
+  border-collapse: collapse;
+  padding: 2px;
+}
+.fee_str em{
+  font-style: normal;
+  color: red;
+}
+                    /* Feature section */
+.features{
+  width: 100%;
+  height:110vh;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}                   
+.feature_main_box{
+  margin-top: 10vh;
+  width: 90%;
+  height:90%;
+  
+}
+.feature_main_box h1{
+  width: 100%;
+  height:10vh;
+  color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:5vh;
+}
+.feature_content_box{
+  font-family: sans-serif;
+  width: 100%;
+  height: 70vh;
+}
+ /* hroizontal feature content 2 section */
+.content_hr_1{
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  justify-content: space-between;
+}
+.content11{
+  width:47%;
+  height:33vh;
+ 
+}
+
+.content12{
+  width:47%;
+  height:33vh;
+  
+}
+     /* hroizontal feature content 2 section */
+.content_hr_2{
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  justify-content: space-between;
+}    
+.content21{
+  width:47%;
+  height:33vh;
+ 
+}
+.content22{
+  width:47%;
+  height:33vh;
+  
+}
+
+        /* book and know more part */
+
+.know_more_feature_book{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.book_seat{
+   width: 30%;
+   height: 40%;
+   background-color: orange;
+   color: white;
+   margin-left: 10%;
+   border-radius: 5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.feture_know_more{
+  width: 30%;
+  height: 40%;
+  background-color: orange;
+  color: white;
+  margin-right: 10%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img11{
+  width: 100%;
+  height: 70%;
+  background-image: url("images/bed.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.img12{
+  width: 100%;
+  height: 70%;
+  background-image: url("images/food\ meal.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.img21{
+  width: 100%;
+  height: 70%;
+  background-image: url("images/parking.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.img22{
+  width: 100%;
+  height: 70%;
+  background-image: url("Images/water-and-electricity.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+        /* form section reservation */
+.form{
+  width: 100%;
+  height: 90vh;
+  background-image:linear-gradient(rgba(8, 6, 2, 0.479),
+  rgba(8, 6, 2, 0.877)),url("images/room.jpg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_main{
+  /* margin-top: 10vh; */
+  border-radius: 10px;
+  width: 85%;
+  height: 80%;
+  background-color: rgba(20, 3, 3, 0.568);
+}
+.reserve_head{
+   font-family: sans-serif;
+   color: rgba(255, 102, 14, 0.945);
+   font-size:25px;
+   margin-bottom: 3vh;
+}   
+ /* head form fill up main box */
+.form_head_box{
+    min-width: 280px;
+    height: 70vh;
+    /* background-color: rgba(10, 10, 6, 0.575); */
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+       /* actual form box */
+.form_box{
+    width: 90%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.212);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10% ;
+    font-family:sans-serif;
+}       
+     /* styling inputs */
+.form_box input[type=text]{
+    width:85%;
+    height:10%;
+    margin-bottom: 7%;
+    border: none;
+    border-radius:5px;
+    appearance: none;
+    outline: none;
+    background-color: rgba(241, 236, 236, 0.712);
+}    
+.form_box input[type=email]{
+    width:85%;
+    height:10%;
+    margin-bottom: 7%;
+    border: none;
+    border-radius:5px;
+    appearance: none;
+    outline: none;
+    background-color: rgba(241, 236, 236, 0.712);
+}
+.form_box input[type=tel]{
+    width:85%;
+    height:10%;
+    margin-bottom: 7%;
+    border: none;
+    border-radius:5px;
+    appearance: none;
+    outline: none;
+    background-color: rgba(241, 236, 236, 0.712);
+}  
+
+.form_box input::placeholder{
+   color: rgba(0, 0, 0, 0.404);
+   padding-left: 20px;
+}
+.form_box select{
+    width: 85%;
+    height: 10%;
+    border: none;
+    /* appearance: none; */
+    outline: none;
+    border-radius: 5px;
+}
+label.room_type_select{
+    width: 85%;
+    color: white;
+}
+.form_box select{
+  background-color:rgba(241, 236, 236, 0.712);
+}
+.form_box select option{
+   
+}
+.notice_for_bed{
+  padding: 5px;
+  width: 85%;
+  height: 10%;
+  color:white;
+}
+.profession{
+  padding-left: 2%;
+  margin-top: 2%;
+  width: 85%;
+  color: rgb(255, 254, 254);
+}
+.radio_btns{
+    width: 85%;
+    color: white;
+}
+.form_box input[type=radio]{
+    width: 85;
+    text-align: center;
+}
+
+     /* button creation */     
+.submit{
+    width: 85%;
+    height: 10%;
+   
+}
+   /* submit button */
+.submit input{
+    float: right;
+    width: 100px;
+    height: 80%;
+    border: none;
+    appearance: none;
+    outline: none;
+    border-radius: 5px;
+    color: white;
+    font-family: sans-serif;
+    background-color:rgb(233, 22, 170);
+}
+     /* contact page and footer */
+.contact{
+  background-color: rgb(24, 24, 230);
+  width: 100%;
+  height:20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:20vh
+}
+
+    /* contact main container */
+.contact_main{
+  width: 100%;
+  height:20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} 
+               /* contact section  */
+.phone{
+  text-align: center;
+  font-family: sans-serif;
+  font-size:25px;
+  margin-top: 20px;
+} 
+.phn{
+  color: white;
+}              
+.fa{
+  color: rgb(248, 248, 248);
+  margin-right: 10px;
+}
+.email{
+  text-align: center;
+}
+fa{
+  color:whitesmoke;
+}
+.eml{
+  color: white;
+  margin-right: 10px;
+  font-family: sans-serif;
+  font-size: 23px;
+  margin-top:20px;
+}
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+}
+.copy{
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+}
+hr.last{
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
